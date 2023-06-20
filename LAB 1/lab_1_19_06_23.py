@@ -43,7 +43,7 @@ def prepare_age_histogram(data):
     ages = []
     for line in data[1:]:
         customer = line.strip().split(';')
-        age = int(customer[0])  # Assuming age column is at index 3
+        age = int(customer[0])  # Assuming age column is at index 0
         ages.append(age)
 
     # Divide ages into classes of interval 10
